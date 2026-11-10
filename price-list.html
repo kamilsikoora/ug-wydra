@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Cennik</title>
+        <style>
+            table, tr, td, th {
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+ <!--Ceny. Bilet jednorazowy dla dorosłego kosztuje 6 zł, a karnet na 10 przepraw 50 zł. Ulgowy (dzieci,
+uczniowie, studenci i seniorzy po 65. roku życia) to 3 zł za przeprawę i 25 zł za karnet. Rower 4 zł,
+pies 2 zł; na rower i psa karnetów nie ma.-->
+    <body>
+        <figure>
+            <table>
+                <thead>
+                    <tr>
+                       <td></td>
+                        <th scope="col">Jednorazowy</th>
+                        <th scope="col">Karnet*</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        <th scope="row">Normalny:</th>
+                        <td>6 zł</td>
+                        <td>50 zł</td>
+                    </tr>
+                   <tr>
+                        <th scope="row">Ulgowy:**</th>
+                        <td>3 zł</td>
+                        <td>25 zł</td>
+                    </tr>
+                   <tr>
+                        <th scope="row">Rower</th>
+                        <td>4 zł</td>
+                        <td rowspan="2">Brak</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pies:</th>
+                        <td>2 zł</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+            <figcaption>
+                <p>* - 10 przepraw</p>
+                <p>** - dzieci, uczniowie, studenci i seniorzy po 65. roku życia</p>
+            </figcaption>
+        </figure>
+
+    </body>
+</html> 
