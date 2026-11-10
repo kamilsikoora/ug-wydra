@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Plan kursowania promu</title>
+        <style>
+            table, tr, td, th {
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th scope="colgroup" colspan="2">Maj, Czerwiec, Wrzesień</th>
+                    <th scope="colgroup" colspan="2">Lipiec, Sierpień</th>
+                </tr>
+                <tr>
+                    <th scope="col">Dni</th>
+                    <th scope="col">Pierwszy kurs</th>
+                    <th scope="col">Ostatni kurs</th>
+                    <th scope="col">Pierwszy kurs</th>
+                    <th scope="col">Ostatni kurs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Robocze:</th>
+                    <td>07:00</td>
+                    <td>18:00</td>
+                    <td>06:30</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sobota:</th>
+                    <td>08:00</td>
+                    <td>19:00</td>
+                    <td rowspan="2">07:00</td>
+                    <td rowspan="2">21:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Niedziela i święta:</th>
+                    <td>09:00</td>
+                    <td>19:00</td>
+                </tr>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html> 
