@@ -34,6 +34,43 @@ a:hover {
     color: #c2410c;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #1f3a5f;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+table th {
+    background-color: #dbe4ee;
+}
+
+thead td {
+    background-color: #dbe4ee;
+}
+
+tbody th {
+    text-align: left;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption > p {
+
+    background-color: #fff;
+    margin: 0;
+    padding: 0.25rem 1rem;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 header,
 footer {
     padding: 1rem;
@@ -79,4 +116,3 @@ footer > address > p {
     border-left: 4px solid #c2410c;
     padding-left: 1rem;
 }
-
