@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="utf-8">
-        <title>Rezerwacje</title>
-    </head>
 
-    <body>
-        <main>
+<head>
+    <meta charset="utf-8">
+    <title>Rezerwacje</title>
+</head>
+
+<body>
+    <header>
+        <h1>Przeprawa promowa Wydra</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Start</a></li>
+                <li><a href="/schedule.html">Rozklad kursow</a></li>
+                <li><a href="/price-list.html">Cennik</a></li>
+                <li><a href="/reservation.html">Rezerwacje</a></li>
+                <li><a href="/reles.html">Regulamin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
             <form>
                 <div>
                     <label for="group-name">Nazwa grupy*</label>
@@ -18,7 +33,7 @@
                     <input type="number" id="group-size" name="groupSize" min="5" max="48" required>
                 </div>
 
-                 <div>
+                <div>
                     <label for="day">Dzien przeprawy:*</label>
                     <input type="date" id="day" name="day" min="2027-05-01" max="2027-09-30" required>
                 </div>
@@ -54,6 +69,16 @@
 
                 <button>Wyslij</button>
             </form>
-        </main>
-    </body>
-</html> 
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Józef Wydra</p>
+            <p>Brzeg Górny 7</p>
+            <p>E-mail: <a href="mailto:przeprawa.wydra@example.com">przeprawa.wydra@example.com</a></p>
+        </address>
+    </footer>
+</body>
+
+</html>
