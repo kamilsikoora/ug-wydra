@@ -71,6 +71,32 @@ figcaption > p {
     font-style: italic;
 }
 
+form input:not([type="radio"]) {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #1f3a5f;
+    padding: 0.5rem
+}
+
+button {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    background-color: #c2410c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9b340b;
+}
+
+fieldset {
+    margin-top: 0.5rem;
+}
+
 header,
 footer {
     padding: 1rem;
@@ -115,4 +141,8 @@ footer > address > p {
 #news > article {
     border-left: 4px solid #c2410c;
     padding-left: 1rem;
+}
+
+.form-group {
+    padding: 0.25rem 0;
 }
