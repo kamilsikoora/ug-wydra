@@ -22,55 +22,53 @@
     </header>
 
     <main>
-        <section>
-            <form>
+        <form>
+            <div class="form-group">
+                <label for="group-name">Nazwa grupy:*</label>
+                <input type="text" id="group-name" name="groupName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="group-size">Liczba osób:*</label>
+                <input type="number" id="group-size" name="groupSize" min="5" max="48" required>
+            </div>
+
+            <div class="form-group">
+                <label for="day">Dzien przeprawy:*</label>
+                <input type="date" id="day" name="day" min="2027-05-01" max="2027-09-30" required>
+            </div>
+
+            <fieldset>
+                <legend>Brzeg startowy:*</legend>
+
                 <div class="form-group">
-                    <label for="group-name">Nazwa grupy:*</label>
-                    <input type="text" id="group-name" name="groupName" required>
+                    <input type="radio" id="from-first-station" name="from" value="brzeg-gorny" required>
+                    <label for="from-first-station">Brzeg Górny</label>
                 </div>
 
                 <div class="form-group">
-                    <label for="group-size">Liczba osób:*</label>
-                    <input type="number" id="group-size" name="groupSize" min="5" max="48" required>
+                    <input type="radio" id="from-second-station" name="from" value="kepa-lakowa" required>
+                    <label for="from-second-station">Kępa Łąkowa</label>
                 </div>
+            </fieldset>
 
-                <div class="form-group">
-                    <label for="day">Dzien przeprawy:*</label>
-                    <input type="date" id="day" name="day" min="2027-05-01" max="2027-09-30" required>
-                </div>
+            <div class="form-group">
+                <label for="cycles">Ilosc rowerow:</label>
+                <input type="number" id="cycles" name="cycles" value="0" max="10">
+            </div>
 
-                <fieldset>
-                    <legend>Brzeg startowy:*</legend>
+            <div class="form-group">
+                <label for="email">Email:*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-                    <div class="form-group">
-                        <input type="radio" id="from-first-station" name="from" value="brzeg-gorny" required>
-                        <label for="from-first-station">Brzeg Górny</label>
-                    </div>
+            <div class="form-group">
+                <label for="pass">Karnet grupowy:</label>
+                <input type="text" id="pass" name="pass" pattern="^WY-[0-9]{4}">
+            </div>
 
-                    <div class="form-group">
-                        <input type="radio" id="from-second-station" name="from" value="kepa-lakowa" required>
-                        <label for="from-second-station">Kępa Łąkowa</label>
-                    </div>
-                </fieldset>
-
-                <div class="form-group">
-                    <label for="cycles">Ilosc rowerow:</label>
-                    <input type="number" id="cycles" name="cycles" value="0" max="10">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="pass">Karnet grupowy:</label>
-                    <input type="text" id="pass" name="pass" pattern="^WY-[0-9]{4}">
-                </div>
-
-                <button type="submit">Wyslij</button>
-            </form>
-        </section>
+            <button type="submit">Wyslij</button>
+        </form>
     </main>
 
     <footer>
